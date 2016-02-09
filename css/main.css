@@ -1,0 +1,597 @@
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+
+/* TYPO */
+p{
+    font-family: Open sans, sans-serif;
+    line-height: 1.6em;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+h3{
+    font-family: Open sans, sans-serif;
+}
+
+h1.caption{
+    font-size: 72px;
+    letter-spacing: 4px;
+    font-family: Open sans, sans-serif;
+    font-weight: bold;
+    color: #3487a9;
+
+}
+
+h2.caption{
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: Open sans, sans-serif;
+    font-weight: bold;
+}
+
+blockquote{
+    font-family: Open sans, sans-serif;
+    font-weight: 300;
+    margin:0;
+}
+
+
+.overlay{
+    background: url("../img/overlay.png") repeat scroll 0 0 rgba(0, 0, 0, 0.20);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.lt-ie9 .overlay{
+    z-index: 10;
+    background: url("../img/overlay.png");
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* PROBA */
+.carousel.fade {
+    opacity: 1;
+}
+.carousel.fade .item {
+    -moz-transition: opacity ease-in-out .7s;
+    -o-transition: opacity ease-in-out .7s;
+    -webkit-transition: opacity ease-in-out .7s;
+    transition: opacity ease-in-out .7s;
+    left: 0 !important;
+    opacity: 0;
+    top:0;
+    position:absolute;
+    width: 100%;
+    display:block !important;
+    z-index:1;
+}
+.carousel.fade .item:first-child {
+    top:auto;
+    position:relative;
+}
+.carousel.fade .item.active {
+    opacity: 1;
+    -moz-transition: opacity ease-in-out .7s;
+    -o-transition: opacity ease-in-out .7s;
+    -webkit-transition: opacity ease-in-out .7s;
+    transition: opacity ease-in-out .7s;
+    z-index:2;
+}
+.carousel-control{
+    z-index: 999;
+}
+
+a:hover, a:active, a:focus {
+    outline:0;
+}
+.carousel, .item, .active {
+    height:100%;
+}
+.carousel-inner {
+    height:100%;
+}
+.carousel {
+    margin-bottom: 0;
+}
+.lt-ie9 .carousel-caption{
+    zoom:1;
+    filter: progid:DXImageTransform.Microsoft.DropShadow(offX=2,offY=2, color=#3b3b3b);
+}
+
+.carousel-caption {
+    z-index: 10;
+    text-shadow:0 2px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel .item {
+    background-color: #000000;
+}
+.carousel .carousel-inner .bg {
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.carousel .carousel-inner .bg1 {
+    background-image:url('../img/001.jpg');
+    background-position: center top;
+}
+.carousel .carousel-inner .bg2 {
+    background-image:url('../img/002.jpg');
+    background-position: center center;
+}
+.carousel .carousel-inner .bg3 {
+    background-image:url(../img/003.jpg);
+    background-position: center bottom;
+}
+
+.carousel .carousel-inner .bg4 {
+    background-image:url(../img/004.jpg);
+    background-position: center center;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    font-family: Open sans, sans-serif;
+    font-size: 14px;
+}
+
+.carousel-caption{
+    top: 15%;
+    bottom: auto;
+    opacity: 0;
+    -webkit-transition: all 2500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -moz-transition: all 2500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -o-transition: all 2500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition: all 2500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+    transition-delay: 0.8s;
+}
+
+.active .carousel-caption{
+    opacity: 1;
+    top: 35%;
+}
+
+
+.naglasi{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.obicno{
+    font-size: 65px;
+}
+
+
+.navbar-inverse{
+    background: #1b1b1b;
+    opacity: 0.95;
+}
+
+.navbar-brand{
+    background: url(../img/logotip.png) no-repeat;
+    width: 330px!important;
+    height: 82px;
+    padding: 15px;
+    display: block;
+    margin: 15px 35px 15px 15px;
+}
+.navbar-inverse{
+    border-bottom: 2px solid #2f7292;
+}
+
+.navbar-toggle{
+    margin-top: 39px;
+}
+
+.lt-ie9 .navbar-nav{
+    margin-top: 34px!important;
+}
+
+.navbar-nav{
+    margin-top: 34px;
+}
+
+
+.navbar-nav > li > a{
+    padding-bottom: 5px;
+    -o-transition:color .2s ease-out, background 2s ease-in;
+    -ms-transition:color .2s ease-out, background 2s ease-in;
+    -moz-transition:color .2s ease-out, background 2s ease-in;
+    -webkit-transition:color .2s ease-out, background 2s ease-in;
+}
+
+.navbar-inverse .navbar-nav > .active > a{
+    border-bottom: 2px solid #2f7292;
+}
+
+.lt-ie9 .navbar-inverse .navbar-nav > .active > a{
+    background-image: none!important;
+    box-shadow: none;
+    background: none;
+}
+
+.navbar-inverse .navbar-nav > .active > a{
+    background-image: none;
+    box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+    background-color: transparent;
+}
+
+.naslov{
+    font-family: Open sans, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 45px;
+}
+
+.tekst{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+.block{
+    padding-top: 55px;
+    padding-bottom: 45px;
+}
+
+/**********/
+/* O NAMA */
+#onama{
+    background-color: #f8f8f8;
+}
+
+.blockquote-reverse, blockquote.pull-right{
+    border-right: 5px solid #316F8C;
+}
+
+.ikona i{
+    color: #326f8d;
+    font-size: 44px;
+}
+
+.ikona{
+    margin-bottom: 15px;
+}
+.broj{
+    display: inline-block;
+    font-family: Open sans, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #7a7a7a;
+
+}
+
+.tekst-broj{
+    color:#7a7a7a;
+    font-size: 22px;
+}
+
+.okvir{
+    border:  1px solid #d6d6d6;
+    border-radius: 6px;
+    padding: 45px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+/***************/
+/* VOZNI PARK */
+
+#voznipark{
+    /*background: #2379a3;
+        position: relative;*/
+    background: url(../img/001_dark.jpg);
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.galerija{
+    padding-bottom: 30px;
+}
+
+.bijeli{
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+#pracenjeposiljke{
+    background: #006699 url("../img/patt2.png") repeat;
+}
+
+.pracenje-container{
+    padding-top: 55px;
+}
+
+.mapa{
+    margin-bottom: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.mapa-tekst{
+    text-align: justify;
+}
+
+.telefon .fa{
+    margin-right: 5px;
+}
+.mail .fa{
+    margin-right: 5px;
+}
+.telefon{
+    margin-top: 5px;
+}
+#kontakt{
+    background-color:#F8F8F8;
+}
+
+.kontakt-podaci{
+    padding: 10px;
+    font-family: Open sans, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+
+a.mail-bijelo{
+    color: #ffffff;
+}
+
+
+.efekt {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+#lokacija{
+    background: url("../img/lokacija.jpg");
+    background-size: cover;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 40%; // This is the aspect ratio
+height: 0;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+
+.efekt:hover {
+    opacity: 0.75;
+}
+
+.posalji{
+    background: #026ca1;
+    border:none;
+    padding: 8px 20px;
+    border-radius: 1px;
+    font-family: Open sans, sans-serif;
+    border-bottom: 4px solid #0b537d;
+    text-transform: uppercase;
+}
+
+.posalji .fa{
+    margin-right: 3px;
+}
+
+.active .noviefekt{
+    opacity: 1;
+}
+/* KONTAKT */
+.form-group{
+    position: relative;
+}
+
+.kontakt-forma .form-group .fa{
+    position: absolute;
+    font-size: 18px;
+    right: 14px;
+    top: 50%;
+    color: #2e7292;
+    margin-top: -8px;
+}
+.kontakt-forma .form-group .fa:active{
+    color: #73b746;
+}
+
+#kontakt h2{
+    font-family: Open sans, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #383838;
+    text-transform: uppercase;
+}
+
+.djelatnici{
+    text-align: center;
+}
+.pozicija{
+    font-size: 13px;
+    color: #5a5a5a;
+    text-transform: uppercase;
+}
+
+.djelatnici .fa-phone{
+    color: #2e7292;
+    margin-right: 3px;
+}
+
+.djelatnici .fa-user{
+    font-size: 28px;
+    color: #dcdddd;
+}
+
+.djelatnici .form-group{
+    margin-bottom: 30px;
+}
+
+.podnaslov{
+    font-family: Open sans, sans-serif;
+    font-weight: 300;
+    padding-bottom: 30px;
+    font-size: 26px;
+    color: #939393;
+}
+
+.lokacija-podaci .fa{
+    font-size: 52px;
+    color: #d8d8d8;
+    margin-bottom: 5px;
+}
+
+.lokacija-podaci a{
+    color: #ffffff;
+
+}
+
+
+.lokacija-podaci{
+    text-align: center;
+}
+
+.lokacija-podaci h4{
+    font-family: Open sans, sans-serif;
+    color: #ffffff;
+}
+
+.lokacija-podaci p{
+    line-height: 1em;
+}
+
+
+footer{
+    padding: 20px;
+    min-height: 50px;
+    background: #006699;
+}
+
+.copyright{
+    color: #ffffff;
+    font-family: Open sans, sans-serif;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.jezici{
+    margin-top: 8px;
+    color: #ffffff;
+}
+
+#top{
+    margin: 0 auto;
+    display: block;
+}
+
+.djelatnici{
+    padding-top: 10px;
+}
+/*  @  M  E  D  I  A */
+
+@media only screen and (max-width: 991px){
+    .navbar-nav{
+        margin-top: 0;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 640px) {
+    .navbar-brand{background: url(../img/logotip_xs.png) no-repeat;    width: 180px!important;height:47px;}
+    .navbar-toggle{margin-top: 20px;}
+    .carousel .carousel-inner .bg2 {
+        background-position: right center;
+    }
+    h1.caption{font-size: 42px; }
+    h2.caption{font-size: 28px;}
+    .google-maps {    padding-bottom: 60%;}
+    .dugacko{letter-spacing: 0!important; margin-right: 20px;}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .navbar-inverse .navbar-nav > li > a{
+        font-family: Open sans, sans-serif;
+        font-size: 12px;
+    }
+    .carousel .carousel-inner .bg2 {
+        background-position: right center;
+    }
+    .carousel .carousel-inner .bg4 {
+        background-image:url(../img/004.jpg);
+        background-position: -50px center;
+    }
+    .pozicija{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width : 1024px) and (max-width: 1200px){
+    /*Styles*/
+    .navbar-inverse .navbar-nav > li > a{
+        font-family: Open sans, sans-serif;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+    .google-maps {    padding-bottom: 30%; // This is the aspect ratio}
+}
+
+@media only screen and (max-width: 767px){
+    .adresa{
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+
+/***** Contact Form Elements *****/
+.clear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clear { display: inline-block; }
+html[xmlns] .clear { display: block;}
+* html .clear { height: 1%;}
+
+
+#contactWrapper {padding:30px; }
+#contactWrapper h1 { font-size: 11px; margin: -33px 0px 30px; padding: 5px 0px 0px 15px; font-size: 12px; text-transform: uppercase; background: url(../img/title-background.png) no-repeat; width: 138px; height: 22px; color: #fff; font-weight: bold;}
+#contactWrapper label { display:block; float:none; font-size:14px; width:auto; font-weight: normal; margin-bottom: 7px; color: #333333; font-family: Open sans, sans-serif}
+#contactWrapper label.error { position: absolute; top: -20px; display:block; float:none; font-size:12px; width:auto; font-weight: normal; margin-bottom: 0px; color: #bb3737; background: #fad6d6; margin-top: 5px; padding: 5px 7px;border-radius: 2px;}
+#contactWrapper label.checked { display:none; background: none; border: 0px; margin-top: 0px; padding: 0px; text-indent: -5000px;}
+#contactWrapper em { color: #01b3b3;}
+#contactWrapper .stage { margin-bottom: 20px;}
+#contactWrapper .requiredNote { margin: 20px 0px 20px; color: #333; font-weight: bold;}
+#contactWrapper .success { padding: 10px; background: #f0ffc1; margin-bottom: 15px; color: #819934; border-radius: 2px;}
+#contactWrapper .success p { margin: 0px;}
+
+form#contactform input, form#contactform textarea { border: 1px solid #cfdede; padding:14px 12px; font-size:12px; color:#333!important; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; width: 100%; }
+form#contactform textarea {font:12px Arial, Helvetica, sans-serif; padding: 12px;}
+form#contactform input:focus, form#contactform textarea:focus { outline: none; border: 1px solid #73b746;}
+
+
+
+.polje{margin-bottom: 15px;}
